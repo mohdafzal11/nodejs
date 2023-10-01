@@ -1,0 +1,43 @@
+                                                        Chapter-4 (REST API using expressjs)
+
+HTTPS Methods
+
+1.GET : This request is used to get a resource from a server. If you perform a GET request, the server looks for the data you requested and sends it back to you. In other words, a GET request performs a READ operation. This is the default request method.
+
+2.POST This request is used to create a new resource on a server. If you perform a POST request, the server creates a new entry in the database and tells you whether the creation is successful. In other words, a POST request performs an CREATE operation.
+
+3.PUT and PATCH: These two requests are used to update a resource on a server. If you perform a PUT or PATCH request, the server updates an entry in the database and tells you whether the update is successful. In other words, a PUT or PATCH request performs an UPDATE operation.
+
+4.DELETE : This request is used to delete a resource from a server. If you perform a DELETE request, the server deletes an entry in the database and tells you whether the deletion is successful. In other words, a DELETE request performs a DELETE operation.
+
+
+
+
+
+REST API:
+
+
+1.READ API
+GET \tasks : to read all data from the database related to the path.
+
+GET \task\:id : to read a particular task which can be identified by unique id
+
+
+
+2.CREATE API
+
+CREATE APIs :
+POST \tasks : to create a new task object (data will go inside request body)
+
+
+
+3.UPDATE API 
+PUT \task\:id : to update a particular task which can be identified by unique id. Data to be updated will be sent in the request body. Document data will be generally totally replaced.
+
+PATCH \task\:id : to update a particular task which can be identified by unique id. Data to be updated will be sent in the request body. Only few fields will be replace which are sent in request body
+
+
+4.DELETE API 
+
+DELETE \task\:id : to delete a particular task which can be identified by unique id.
+
